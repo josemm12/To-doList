@@ -1,12 +1,15 @@
 # 📝 Task List - Lista de Tareas
 
-Una pequeña aplicación web que permite a los usuarios:
+¡Bienvenido a mi aplicación de gestión de tareas!  
+Esta app te permite agregar, editar, eliminar y marcar tareas como completadas de forma sencilla.
 
-✅ Agregar tareas  
-✅ Editar tareas  
-✅ Eliminar tareas  
-✅ Guardar las tareas automáticamente en el navegador usando `localStorage`  
-✅ Mantener las tareas incluso después de recargar la página  
+## 🚀 Características
+
+✅ Agregar tareas ✅  
+✅ Editar tareas ✏️ 
+✅ Eliminar tareas ❌ 
+✅ Guardar las tareas automáticamente en el navegador usando `localStorage` 💾 
+✅ Mantener las tareas incluso después de recargar la página 🎨
 
 ## 📸 Vista previa
 
@@ -25,5 +28,4 @@ Una pequeña aplicación web que permite a los usuarios:
 - Opción para **marcar como completada** una tarea
 
 ## 👨‍💻 Autor
-
 Desarrollado por [Jose Manuel Martinez]
