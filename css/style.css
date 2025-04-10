@@ -102,3 +102,18 @@ body {
 .delete-btn:hover {
     background: #960404;
 }
+
+.edit-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #5B99F0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.edit-input:focus {
+    border-color: #3375b8;
+    background-color: #f0f8ff;
+}
