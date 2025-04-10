@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>To-do List</title>
 </head>
 <body>
-    
+    <!--Encerre todo en un div y card-->
+    <div class="container">
+        <div class="card">
+            <h1>To-Do List</h1>
+
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Agregar nueva Tarea" required>
+                <button type="submit">Agregar</button>
+            </form>
+            <section id="task-list">
+                <!--AQUI APARECERAN LAS TAREAS-->
+
+            </section>
+
+        </div>
+    </div>
     <script src="js/myScript.js"></script>
 </body>
 </html>
