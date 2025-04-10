@@ -10,6 +10,8 @@ form.addEventListener('submit', function (e) {
     if(taskText !== '') {
         addTask(taskText);
         taskInput.value = '';
+        //Agrego guardarTarea para guardar la tarea en el localStorage
+        guardarTareas();
     }
 })
 
@@ -49,6 +51,8 @@ function addTask(text) {
                 taskDiv.classList.remove('editing');
 
                 alert("Tarea actualizada correctamente");
+                //Agrego guardarTarea para guardar la tarea en el localStorage al editarla
+                guardarTareas();
             }
         }
     });
@@ -59,6 +63,7 @@ function addTask(text) {
     deleteBtn.addEventListener('click', function () {
         if(confirm("¿Estas seguro de eliminar esta tarea?")) {
             taskDiv.remove();
+            guardarTareas(); // Actualiza el localStorage después de eliminar
             alert("Tarea eliminada");
         }
     });
@@ -71,3 +76,26 @@ function addTask(text) {
 
     taskList.appendChild(taskDiv);
 }
+
+
+//Aqui agrego la funcion para guardar las tareas en el localStorage
+function guardarTareas() {
+    const tareas = [];
+    document.querySelectorAll('.task-item span').forEach(span => {
+        tareas.push(span.textContent);
+    });
+
+    localStorage.setItem('tareas', JSON.stringify(tareas));
+}
+
+//Aqui agrego la funcion para cargar las tareas desde el localStorage
+function cargarTareas() {
+    const tareasGuardadas = localStorage.getItem('tareas');
+    if(tareasGuardadas) {
+        const tareas = JSON.parse(tareasGuardadas);
+        tareas.forEach(texto => addTask(texto));
+    }
+}
+
+//Agrego cargarTareas para cargar las tareas desde el localStorage
+cargarTareas();
