@@ -6,10 +6,10 @@ Esta app te permite agregar, editar, eliminar y marcar tareas como completadas d
 ## 🚀 Características
 
 ✅ Agregar tareas ✅  
-✅ Editar tareas ✏️ 
-✅ Eliminar tareas ❌ 
-✅ Guardar las tareas automáticamente en el navegador usando `localStorage` 💾 
-✅ Mantener las tareas incluso después de recargar la página 🎨
+✅ Editar tareas ✏️ ✅  
+✅ Eliminar tareas ❌  
+✅ Guardar las tareas automáticamente en el navegador usando `localStorage` 💾  
+✅ Mantener las tareas incluso después de recargar la página 🎨  
 
 ## 📸 Vista previa
 
